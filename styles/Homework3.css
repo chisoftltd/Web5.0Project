@@ -20,6 +20,7 @@
         background-color: #353434;
         padding: 20px 50px;
         font-family: 'Contail One';
+        color: #EFEFEF;
     }
     article > h4{
         color:  #9D2129;
@@ -37,7 +38,7 @@
 }
 
 @media not print{
-    h3{
+    main > h3{
         color:  #0E3230;
         font-size: 2em;
     }
@@ -51,7 +52,7 @@
         box-shadow: none;
     }
 
-    h1{
+    header h1{
         font-size: 2em;
     }
     header > h2 {
@@ -67,17 +68,16 @@ header > h1{
     font-size: 4em;
 }
 
-figcaption{
+main figure > figcaption{
     font-size: 0.75em;
     font-style: italic;
 }
-
-figcaption::before{
+main figure > figcaption::before{
     content: 'Pictured above: ';
     font-weight: bold;
 }
 
-time {
+article > time {
     float: right;
     font-size: 0.75em;
     font-weight: lighter;
