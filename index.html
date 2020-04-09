@@ -2,9 +2,66 @@
 <html lang="en-UK">
     <head>
         <title>HTML Page</title>
-        <link rel="stylesheet" href="styles/FONTS.css" />
+        <link rel="stylesheet" href="styles/Homework3.css" />
     </head>
     <body>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+        <header>
+            <h1>Contoso News</h1>
+            <h2>On Time, On Topic</h2>
+        </header>
+        <main>
+            <h3>Latest Artcles</h3>
+            <article>
+                <time datetime="08-04-2020">Friday, Apr 08</time>
+                <h4>International Story</h4>
+                <p>
+                    If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell."
+                    On the Download Center page, select your language and then click the Download button. You'll be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you're running the 64-bit version of Windows or the x86 file if you're running the 32-bit version
+                    <br/>
+                        <a href="#" target="_blank">Read More ....</a>
+                </p>
+            </article>
+            <article>
+                <time datetime="06-04-2020">Wednesday, Apr 06</time>
+                    <h4>Finance Story</h4>
+                    <p>
+                        Nullam tempor mi at libero elementum varius. Sed lobortis lacus feugiat est tristique, nec imperdiet turpis scelerisque. Ut sed urna malesuada, scelerisque dui sit amet, tempus mauris. Integer bibendum egestas urna, a bibendum sem gravida quis. Cras accumsan rhoncus vestibulum. Nam eu blandit leo. Integer at consectetur nunc, et tempus urna. Integer sit amet sollicitudin elit. Donec nec posuere erat. Sed vestibulum nisl neque, vitae tincidunt ex molestie quis. Nulla fringilla viverra turpis in volutpat. Cras vel orci quis velit efficitur ullamcorper sed eu ex.
+                    </p>
+                        <figure>
+                            <img src="images/chip_debit.png" alt="Debit Card with Chip"/>
+                            <figcaption>New Debit Cards with Chip-Based Sedurity</figcaption>
+                        </figure>
+                        <p>
+                        Nullam vel ex nec lectus imperdiet luctus vitae vel nibh. Donec eleifend velit eros, eu efficitur justo molestie id. In egestas gravida lectus. Ut ipsum odio, suscipit sit amet molestie non, scelerisque sed mi. Aenean sed augue eu arcu faucibus molestie. Sed eget ante gravida, rhoncus velit eu, tempus quam. Sed fermentum at odio sed commodo. Fusce lobortis cursus purus, quis consequat est faucibus at. Etiam massa felis, sodales at sodales sed, iaculis quis arcu.
+                        <br/>
+                        <a href="#" target="_blank">Read More ....</a>
+                    </p>
+            </article>
+            <article>
+                <time datetime="04-04-2020"> Monday, Apr 04</time>
+                <h4>Technology Story</h4>
+                <p>
+                    SharePoint admins can specify any number of organization news sites. For multi-geo tenants, organization news sites would have to be set up for each geo location. Each geo location could use the same central organization news site, and/or have its own unique site that shows organization news specific to that region.
+                    <br/>
+                        <a href="#" target="_blank">Read More ....</a>
+                </p>
+            </article>
+        </main>
+        <h4>
+            Sign up For Our Emails
+        </h4>
+        <summary>
+            <form>
+                <label>E-mail Address</label>
+                <input type="text" required="required" />
+                <label>Delivery Preference: </label>
+                <select>
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                </select>
+                <input type="submit" value="Sign-Up"/>
+            </form>
+        </summary>
     </body>
 </html>
