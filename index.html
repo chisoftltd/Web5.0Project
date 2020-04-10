@@ -2,27 +2,16 @@
 <html>
     <head>
         <title>HTML Page</title>      
+        <link rel="stylesheet" href="styles/BubbledEvents.css"/>
     </head>
     <body>
-        <button onclick="handleClick(doSomethingElse)">Click Me</button>
-        <br/>
-        <p id="dateTarget"></p>
-        <button onclick='getElementById("dateTarget").innerHTML = Date()'>Get Current Time</button>
-        <br/>
-        <button onclick="handleClick2()">Get Current Time</button>
-        <br/>
-        <p id="dateTarget2"></p>
-        <br/>
-        <button id="dateButton">Get Current Time</button>
-        <br/>
-        <p id="dateTarget3"></p>
-        <br/>
-        <button id="dateButton2">Get Current Time</button>
-        <br/>
-        <p id="dateTarget4"></p>
-        <button id="dateButton3">Get Current Time</button>
-        <br/>
-        <p id="dateTarget5"></p>
-        <script type="text/javascript" src="js/HandlingCallbacks.js"></script>   
+        <section class="outermost">
+            <section class="regular">
+                <section class="innermost">
+                    Click Me!
+                </section>
+            </section>
+        </section>
+        <script src="js/BubbledEvents.js"></script>
     </body>
 </html>
