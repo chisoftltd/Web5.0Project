@@ -1,14 +1,13 @@
-function correctMethodName() {
-    return "Output Message"
-}
 
-/*var result = correctMethodName(3);*/
+function getPositionResult(position) {
+    console.log(position.coords.latitude + ' ' + position.coords.longitude);
+    window.alert(position.coords.latitude + ' ' + position.coords.longitude);
+}
+navigator.geolocation.getCurrentPosition(getPositionResult);
 
-try{
-    var result = wrongMethodName(3);
-    document.writeln(result);
+function refreshPosition(position) {
+    var list = document.getElementById('positionList');
+    list.innerHTML += ('<li>' + position.coords.latitude + ' ' + position.coords.longitude + '</li>');
+    window.alert(list.innerHTML);
 }
-catch (error){
-    /*document.writeln('An error occurred');*/
-    document.writeln('<h3>Error:&nbsp;</h3><p>' + error + "</p>");
-}
+navigator.geolocation.watchPosition(position);
