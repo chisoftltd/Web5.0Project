@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" ng-app="listApp">
     <head>
         <title>HTML Page</title>
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-        <script src="js/app.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <script type="text/javascript" src="js/AngularScript.js"></script>
     </head>
-    <body ng-app>
-        <div ng-controller = "homeController">
-          <label>Username:</label>
-          <input type="text" ng-model="uname" placeholder="Enter username" />
-          <hr />
-          <h2>Hello {{uname}}</h2>
-          <button type="button" ng-click="testMe()">Test Me</button>
-        </div>
+    <body ng-controller="listController">
+        <h1>List of Items</h1>
+        <hr/>
+        <ol>
+            <li ng-repeat="item in Items">
+                {{item}}
+            </li>
+        </ol>
+        <hr/>
+        <form>
+            <fieldset>
+                <legend>Add New Item</legend>
+                <input type="text" ng-model="newItem" placeholder="Item Text"/>
+                <button ng-click="addItem()">&#43;</button>
+            </fieldset>
+        </form>
     </body>
 </html>
