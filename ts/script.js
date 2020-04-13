@@ -1,15 +1,17 @@
-class Alert{
-    public showDialog(){
-        var message: String;
+var Alert = /** @class */ (function () {
+    function Alert() {
+    }
+    Alert.prototype.showDialog = function () {
+        var message;
         message = this.getMessage();
         alert(message);
     };
-    private getMessage(): string {
+    Alert.prototype.getMessage = function () {
         return 'Hello World';
     };
-}
-
-function showAlert(){
+    return Alert;
+}());
+function showAlert() {
     var alertManager = new Alert();
     alertManager.showDialog();
 }
