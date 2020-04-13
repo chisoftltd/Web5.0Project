@@ -1,14 +1,14 @@
-var $elam = document.getElementById('output');
-$elam.innerHTML += 'Test ';
-$elam.innerHTML += 4 + 6 + ' Demo';
-$elam.innerHTML += ' Demo ' + 4 + 6;
-$elam.innerHTML += ' Demo ' + (4 + 6);
-
-var testVariable = null;
-var isUndefined = (testVariable === undefined);
-var isNull = (testVariable === null);
-var isEmpty = (testVariable === '');
-
-document.getElementById('isUndefined').innerHTML = isUndefined;
-document.getElementById('isNull').innerHTML = isNull;
-document.getElementById('isEmpty').innerHTML = isEmpty;
+/// <reference path="jquery.d.ts" />
+var Salutation = /** @class */ (function () {
+    function Salutation(message) {
+        this._salutation = message;
+    }
+    Salutation.prototype.Salutation = function () {
+        return "Hello, " + this._salutation;
+    };
+    return Salutation;
+}());
+var greeting = new Salutation("Demo Person");
+$('header').append($('<h1>', {
+    html: greeting.Salutation()
+}));
